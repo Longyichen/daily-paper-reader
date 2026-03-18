@@ -1,5 +1,5 @@
 github:
-  owner: 'Longyichen'
+  owner: Longyichen
   repo: daily-paper-reader
 arxiv_paper_setting:
   mode: standard
@@ -25,3 +25,48 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: LLM OPT
+      description: 大语言模型架构优化、混合专家模型（MoE）、动态计算分配、知识蒸馏与高效推理研究。
+      enabled: true
+      keywords:
+        - keyword: Model Architecture
+          keyword_cn: 模型架构
+          query: A
+        - keyword: Stability
+          keyword_cn: 稳定性
+          query: S
+        - keyword: Attention
+          keyword_cn: ''
+          query: A
+        - keyword: Mixture-of-Experts
+          keyword_cn: 混合专家模型
+          query: Mixture-of-Experts MoE routing strategies and expert selection
+        - keyword: Universal Transformers
+          keyword_cn: 通用Transformer
+          query: Universal Transformers and recurrent loop-based model architectures
+        - keyword: Scaling Laws
+          keyword_cn: 缩放法则
+          query: LLM scaling laws and convergence dynamics in large-scale training
+      intent_queries:
+        - query: advanced architectures for conditional computation and dynamic MoE routing
+          query_cn: 条件计算与动态MoE路由的高级架构研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: optimization techniques for LLM training stability and scaling behavior
+          query_cn: 大语言模型训练稳定性与缩放行为的优化技术
+          enabled: true
+          source: manual
+          note: ''
+        - query: efficient inference methods for long context modeling and sparse attention
+          query_cn: 长文本建模与稀疏注意力的显存高效推理方法
+          enabled: true
+          source: manual
+          note: ''
+        - query: theoretical analysis of information flow and entropy in transformer models
+          query_cn: Transformer模型中信息流与熵的理论分析
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-03-18T18:15:02.011Z'
